@@ -4,9 +4,8 @@ import requests
 import os
 from dotenv import load_dotenv
 from fastapi.responses import JSONResponse
+from api.config import API_KEY
 
-load_dotenv()
-API_KEY = os.getenv("API_KEY")
 
 
 app = FastAPI()
